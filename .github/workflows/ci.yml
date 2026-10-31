@@ -26,4 +26,6 @@ jobs:
       - run: python -m pytest -q
       - run: mcplens --version
       - run: mcplens demo mcplens-demo
-      - run: mcplens analyze mcplens-demo/looping-session.ndjson
+      # the demo trace has planted warns: exit code 1 and all three findings are the expected outcome
+      - run: mcplens analyze mcplens-demo/looping-session.ndjson > analyze.out || python -c "open('warned','w').write('1')"
+      - run: python -c "import sys; out = open('analyze.out').read(); missing = [k for k in ('repeated-calls', 'ping-pong', 'unanswered') if k not in out]; warned = __import__('pathlib').Path('warned').exists(); sys.exit(0 if (warned and not missing) else 1)"
