@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/juzorei/mcplens/actions/workflows/ci.yml/badge.svg)](https://github.com/juzorei/mcplens/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/github/license/juzorei/mcplens)](LICENSE)
-[![PyPI](https://img.shields.io/pypi/v/mcplens)](https://pypi.org/project/mcplens/)
+[![PyPI](https://img.shields.io/pypi/v/mcplens)](https://pypi.org/project/agent-mcplens/)
 
 An agent skill and a CLI that debug **AI agents themselves**: a transparent MCP stdio proxy that records, and an offline audit for loops in MCP traces and saved session transcripts (Claude Code, Codex).
 

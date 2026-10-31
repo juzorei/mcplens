@@ -30,7 +30,7 @@ mcplens demo [dir]                            # synthetic looping-agent trace to
 
 Python 3.11+, stdlib only — no MCP SDK dependency: a transparent tracer doesn't need one, and neither do the transcripts.
 
-Install: `pip install mcplens` — or from this repo:
+Install: `pip install agent-mcplens` — or from this repo:
 `pip install "git+https://github.com/juzorei/mcplens#subdirectory=tools/mcplens"`
 
 The companion agent skill lives in [skills/agent-wire-audit](../skills/agent-wire-audit): record → analyze → fix → prove with a before/after trace. Skills: `npx skills add juzorei/mcplens`.

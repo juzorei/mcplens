@@ -3,7 +3,7 @@ requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mcplens"
+name = "agent-mcplens"
 version = "0.1.0"
 description = "Debug AI agents: transparent MCP stdio proxy + trace/transcript audit for loops, ping-pong, unanswered calls and tool errors"
 readme = "README.md"
