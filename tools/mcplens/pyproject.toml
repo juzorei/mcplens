@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcplens"
+version = "0.1.0"
+description = "Debug AI agents: transparent MCP stdio proxy + trace/transcript audit for loops, ping-pong, unanswered calls and tool errors"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{ name = "juzorei" }]
+keywords = ["mcp", "model-context-protocol", "agent-debugging", "transcripts", "agent-skills"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Debuggers",
+]
+
+[project.urls]
+Homepage = "https://github.com/juzorei/mcplens"
+
+[project.scripts]
+mcplens = "mcplens.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

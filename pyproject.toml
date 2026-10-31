@@ -1,0 +1,4 @@
+[tool.pytest.ini_options]
+testpaths = ["tools/mcplens/tests", "skills"]
+pythonpath = ["tools/mcplens/src"]
+python_files = ["test_*.py"]

@@ -1,0 +1,21 @@
+{
+  "name": "mcplens",
+  "owner": {
+    "name": "juzorei"
+  },
+  "metadata": {
+    "description": "Debug AI agents by looking at what they did: MCP proxy traces and transcript audits",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "mcplens",
+      "description": "Record MCP traffic with a drop-in stdio proxy, audit saved Claude Code / Codex transcripts, find loops and repeated calls",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/agent-wire-audit"
+      ]
+    }
+  ]
+}
