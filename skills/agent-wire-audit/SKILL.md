@@ -10,7 +10,7 @@ When an agent misbehaves, everyone argues from vibes: "it keeps calling the sear
 Install the CLI:
 
 ```bash
-pip install mcplens
+pip install agent-mcplens
 ```
 
 ## 1. Live MCP traffic: the drop-in proxy

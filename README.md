@@ -31,7 +31,7 @@ format   claude   tokens in ~757,108,608 out ~6,627,668
 ## Install
 
 ```bash
-pip install mcplens
+pip install agent-mcplens
 npx skills add juzorei/mcplens
 ```
 
